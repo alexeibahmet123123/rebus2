@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rebus</h1>
+
+        <!-- Подсказки -->
+        <div class="clues">
+            <ol>
+                <li>(Studiul structurii și utilizării limbajului)</li>
+                <li>(Formă de exprimare specifică unei limbi)</li>
+                <li>(Rama limbajului care se ocupă cu structura cuvintelor)</li>
+                <li>(Persoană care cunoaște două limbi)</li>
+                <li>(Set de litere utilizat pentru a scrie o limbă)</li>
+                <li>(Referitor la prima limbă învățată)</li>
+                <li>(Mod specific de pronunțare într-o limbă)</li>
+                <li>(Trecerea dintr-o limbă în alta)</li>
+                <li>(Modalitate de a formula gândurile)</li>
+                <li>(Termen folosit doar într-o anumită zonă geografică)</li>
+                <li>(Vorbit din copilărie, în mod natural)</li>
+                <li>(Formarea sunetelor în vorbire)</li>
+            </ol>
+        </div>
+
+        <!-- Поле для ввода слов -->
+        <div id="rebus-container" class="rebus-word"></div>
+
+        <!-- Кнопка для проверки -->
+        <button id="checkButton" onclick="checkAnswers()">Verificați</button>
+        <div id="final-result"></div>
+
+        <!-- Кнопка подсказки -->
+        <button id="hintButton" style="display: none;" onclick="giveHint()">Sugestie</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
